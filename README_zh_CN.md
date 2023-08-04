@@ -275,6 +275,15 @@ python preprocess_flist_config.py --speech_encoder vec768l12 --vol_aug
 ```
 使用后训练出的模型将匹配到输入源响度，否则为训练集响度。
 
+**使用transformer flow**
+
+若使用transformer flow，需要增加`--tf_flow`参数，比如：
+
+```shell
+python preprocess_flist_config.py --speech_encoder vec768l12 --tf_flow
+```
+占用资源较大，谨慎使用。
+
 #### 此时可以在生成的 config.json 与 diffusion.yaml 修改部分参数
 
 ##### config.json
