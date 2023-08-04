@@ -269,6 +269,14 @@ Add `--vol_aug` if you want to enable loudness embedding:
 ```shell
 python preprocess_flist_config.py --speech_encoder vec768l12 --vol_aug
 ```
+**Use transformer flow**
+
+If you want to use transformer flow, you need to add the `--tf_flow`parameter, for example:
+
+```shell
+python preprocess_flist_config.py --speech_encoder vec768l12 --tf_flow
+```
+This will consume more resources, so use it with caution.
 
 After enabling loudness embedding, the trained model will match the loudness of the input source; otherwise, it will match the loudness of the training set.
 
